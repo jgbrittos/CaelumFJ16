@@ -14,7 +14,7 @@ public class CandlestickTest {
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void naoCriaCandleStickComDataNula() {
-		new Candlestick(10, 20, 20, 10, 10000, Calendar.getInstance());
+		new Candlestick(10, 20, 20, 10, 10000, null);
 	}
 
 }
