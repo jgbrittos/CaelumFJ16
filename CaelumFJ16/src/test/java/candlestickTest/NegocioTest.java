@@ -30,12 +30,12 @@ public class NegocioTest {
 	}
 
 	@Test(expected=IllegalArgumentException.class)
-	public void naoCriaNegocioComPreconegativo() {
+	public void naoCriaNegocioComPrecoNegativo() {
 		new Negocio(-10, 20, Calendar.getInstance());
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
-	public void naoCriaNegocioComPrecoQuantidadeNegativa() {
+	public void naoCriaNegocioComQuantidadeNula() {
 		new Negocio(10, 0, Calendar.getInstance());
 	}
 	
